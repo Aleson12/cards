@@ -1,0 +1,118 @@
+body {
+  background-color: hsl(
+    0,
+    0%,
+    95%
+  ); /* cor de fundo da página (Hue, Saturation, Luminance) */
+}
+
+h2 {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 30px;
+  color: white;
+}
+
+p,
+a {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  color: white;
+}
+
+#card {
+  display: flex; /* flex-box ~> alinha o conteúdo um ao lado do outro */
+  justify-content: center; /* container justificado: container centralizado */
+  padding: 10%;
+  border-radius: 100px 0px 0px 10px;
+}
+
+.cardEsp {
+  padding: 50px;
+}
+
+#card1{
+    color:hsl(31, 77%, 52%);
+    background-color: hsl(31, 77%, 52%);
+    border-radius: 10px 0px 0px 10px; 
+} 
+
+#card2{
+    color:hsl(184, 100%, 22%);
+    background-color:hsl(184, 100%, 22%);
+}
+
+#card3{ 
+    color:hsl(179, 100%, 13%); 
+    background-color:hsl(179, 100%, 13%);
+    border-radius: 0px 10px 10px 0px; 
+} 
+
+a {
+  text-decoration: none;
+  color: black;
+  border-radius: 10%;
+  padding: 1.9%;
+}
+
+.button {
+  border: 2px solid white;
+  transition: all 0.2s ease-in-out; /* declaração css para o botão escurecer com um tempo de duração de 2s */
+  /* propriedade transition ~~> permite alterar o valor da propriedade suavemente por um determinado período. */
+  /* transition ==> abreviação da propriedade  */
+  /* all ==> 
+       0.2s ==> transition-duration 
+       ease-in-out ==> transition-timing-function
+    */
+  background-color: white;
+  padding: 15px;
+  border-radius: 25px;
+}
+
+#button1 {
+  color: #e68a00;
+}
+
+#button2 {
+  color: #0040ff;
+}
+
+#button3 {
+  color: #009999;
+}
+
+#button1:hover {
+  /* hover ~> o conteúdo mudará de cor ao passar o mouse por cima. */
+  color: white;
+  background-color: hsl(31, 77%, 52%);
+}
+
+#button2:hover {
+  /* hover ~> o conteúdo mudará de cor ao passar o mouse por cima. */
+  color: white;
+  background-color: hsl(184, 100%, 22%);
+}
+
+#button3:hover {
+  /* hover ~> o conteúdo mudará de cor ao passar o mouse por cima. */
+  color: white;
+  background-color: hsl(179, 100%, 13%);
+}
+
+.esp {
+  margin-bottom: 92px;
+}
+
+/* responsividade */
+@media only screen and (max-width: 900px) {
+    #card {
+      flex-direction: column;
+    }
+    #card1 {
+      border-radius: 10px 10px 0px 0px;
+    }
+  
+    #card3 {
+      border-radius: 0px 0px 10px 10px;
+    }
+  }
